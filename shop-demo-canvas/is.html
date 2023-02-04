@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Demo | Canvas</title>
+    <link rel="stylesheet" href="is.css">
+    <link rel="stylesheet" href="numune2.css">
+    <script src="https://kit.fontawesome.com/18fe446eba.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!--Fancy box-->
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+    <!--Owl Carusel-->
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+</head>
+<body>  
+    <div class="header">
+        <div class="header-left">
+            Free U.S. Shipping on Order above $99. Easy Returns.
+        </div>
+        <div class="header-right">
+            <div class="about">ABOUT</div>
+            <div class="faqs">FAQS</div>
+            <div class="blogs">BLOGS</div>
+            <div class="en">EN <i class="fa fa-angle-down"></i>
+                <div class="language-option">
+                    <ul>
+                        <li><img src="/images/french.png" alt=""> FR</li>
+                        <li> <img src="/images/italian.png" alt=""> IT</li>
+                        <li><img src="/images/german.png" alt=""> DE</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="facebook header-item">
+                <span class="header-icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </span>
+                <span class="header-text">
+                    Facebook
+                </span>
+            </div>
+            <div class="instagram header-item">
+                <span>
+                    <i class="fa-brands fa-instagram"></i>
+                </span>
+                <span class="header-text">
+                    Instagram
+                </span>
+            </div>
+            <div class="nomre header-item">
+                <span>
+                    <i class="fa-solid fa-phone"></i>   
+                </span>
+                <span class="header-text">
+                    +1.11.8541254
+                </span>
+            </div>
+            <div class="gmail header-item">
+                <span>
+                    <i class="fa-sharp fa-solid fa-envelope"></i>   
+                </span>
+                <span class="header-text">
+                    info@canvas.com
+                </span>
+            </div>
+        </div>
+    </div>    
+    <!-- Nav -->
+    <nav id="myHeader" >
+        <div class="container-fluid">
+        <div class="container-fluid">
+            <div class="nav-wrapper">
+            <div class="nav-left">
+                <div class="nav-logo"><img src="/images/logo.png" alt=""></div>
+                <div class="nav-list">
+                    <ul>
+                        <li>Home</li>
+                        <li>Men <i class="fa fa-angle-down">
+                            <div class="nav-mid-list man-nav-mid-list">
+                                <ul>
+                                <ul>
+                                    <li><h5>FOOTWEAR</h5></li>
+                                    <li>Casual Shoes</li>
+                                    <li>Formal Shoes</li>
+                                    <li>Sports shoes</li>
+                                    <li>Flip Flops</li>                               
+                                    <li>Slippers</li>                             
+                                    <li>Sandals</li>                            
+                                    <li>Show all ></li>
+                                </ul>
+                                <ul>
+                                    <li><h5>CLOTHING</h5></li>
+                                    <li>Casual Shirts</li>
+                                    <li>T-Shirts</li>                             
+                                    <li>Collared Tees</li>                           
+                                    <li>Pants / Trousers</li>
+                                    <li>Show all ></li>                                                
+                                </ul>
+                                </ul>
+                                <ul>
+                                <ul>
+                                    <li><h5>SPORTSWEAR</h5></li>
+                                    <li>Sports Casual Shirts</li>
+                                    <li>Sports T-shirts</li>
+                                    <li>Sports Collared Tees</li>
+                                    <li>Sports Shoes</li>                               
+                                    <li>Jackets</li>                             
+                                    <li>Swimwears</li>                            
+                                    <li>Show all ></li>
+                                </ul>
+                                <ul>
+                                    <li><h5>INNERWEARS</h5></li>
+                                    <li>Boxers</li>
+                                    <li>Vests</li>                             
+                                    <li>Sleepwears</li>                           
+                                    <li>Show all ></li>                      
+                                </ul>
+                                </ul>
+                                <ul>
+                                <ul>
+                                    <li><h5>INNERWEARS</h5></li>
+                                    <li>Boxers</li>
+                                    <li>Vests</li>                             
+                                    <li>Sleepwears</li>                           
+                                    <li>Show all ></li>   
+                                </ul>
+                                <ul>
+                                    <li><h5>SUNGLASSES</h5></li>
+                                    <li><h5>WATCHES</h5></li>
+                                    <li><h5>BAGS</h5></li>
+                                    <li><h5>HEADPHONES</h5></li>
+                                    <li><h5>ACCESSORIES</h5></li>                    
+                                </ul>
+                                </ul>
+                                <ul>
+                                    <div><img src="/images/menu-image.jpg" alt=""></div>
+                                </ul>
+                            </div>
+                        </i>
+                        </li>
+                            <li>Women <i class="fa fa-angle-down"></i>
+                                <div class="nav-mid-list">
+                                    <ul>
+                                        <li><h5>FOOTWEAR</h5></li>
+                                        <li>Casual Shoes</li>
+                                        <li>Formal Shoes</li>
+                                        <li>Sports shoes</li>
+                                        <li>Flip Flops</li>                               
+                                        <li>Slippers</li>                             
+                                        <li>Sandals</li>                            
+                                        <li>Party Shoes</li>
+                                    </ul>
+                                    <ul>
+                                        <li><h5>CLOTHING</h5></li>
+                                        <li>Casual Shirts</li>
+                                        <li>T-Shirts</li>                             
+                                        <li>Collared Tees</li>                           
+                                        <li>Pants / Trousers</li>
+                                        <li>Ethnic Wear</li>                           
+                                        <li>Jeans</li>                      
+                                        <li>Swimwear</li>                      
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>Accesories</li>
+                            <li>Blog</li>
+                            <li>Sales</li>
+                        </ul>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="login"><iconify-icon class="login-icon" icon="et:profile-male"></iconify-icon>Login</div>
+                <div class="shop notification">
+                        <span><iconify-icon icon="simple-line-icons:bag"></iconify-icon></span>
+                        <span class="badge">5</span>
+                </div>
+                <div id="search-icon" onclick="searchFunction()" class="search"><iconify-icon  icon="bi:search"></iconify-icon></div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <div id="searchInput" class="search-input">
+            <input id="input" type="text" placeholder="TYPE & HIT ENTER..">
+            <i id="searchClose" onclick="closeFunction()" class="fa-solid fa-x"></i>
+        </div>
+        
+    </nav>
+     <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide1">
+            <p class="fresh">Fresh Arrivals</p>
+            <p class="winter">WINTER / 2021</p>
+            <button class="shop-men">SHOP MENSWEAR</button>
+          </div>
+          <div class="swiper-slide swiper-slide2">
+            <p class="summer">Summer Collections</p>
+            <p class="sale">SALE 40% OFF</p>
+            <button class="shop-beach">SHOP BEACHWEAR</button>
+          </div>
+          <div class="swiper-slide swiper-slide3">
+            <p class="new-arrivals">NEW ARRIVALS / 18</p>
+            <button class="shop-women">SHOP WOMENSWEAR</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div>
+      <div class="Shop-popular-categories">
+        <hr>
+        <h4>Shop popular categories</h4>
+        <hr>
+      </div>
+      </div>
+      <div class="shop-categories">
+        <div class="container">
+        <div class="shop-wrapper">
+            <div class="shop-item col-md-7 col-12">
+            <div class="shop-item-img">
+                <img class="item1" src="images/item1.jpg" alt="">
+            </div>
+                <div class="shop-item-text">
+                        For Him
+                </div>
+            </div>
+        <div class="shop-item col-md-5 col-12">
+            <div class="shop-item-img">
+                <img class="item2" src="images/item2.jpg" alt="">
+            </div>
+                <div class="shop-item-text">
+                        For Her
+                </div>
+        </div>
+        </div>
+        <div class="shop-wrapper">
+            <div class="shop-item col-md-4 col-12">
+                <div class="shop-item-img">
+                    <img class="item3" src="images/item3.jpg" alt="">
+                </div>
+                    <div class="shop-item-text">
+                        Popular Products
+                    </div>
+                    <div class="button">
+                        <button>BROWSE NOW</button>
+                    </div>
+            </div>
+            <div class="shop-item col-md-4 col-12">
+                <div class="shop-item-img">
+                    <img class="item4" src="images/item4.jpg" alt="">
+                </div>
+                    <div class="shop-item-text">
+                        Footwears
+                    </div>
+                    <div class="button">
+                        <button>SHOP NOW</button>
+                    </div>
+            </div>
+            <div class="shop-item col-md-4 col-12">
+                <div class="shop-item-img">
+                    <img class="item5" src="images/item5.jpg" alt="">
+                </div>
+                    <div class="shop-item-text">
+                        Sportswear
+                    </div>
+                    <div class="button">
+                        <button>SHOP NOW</button>
+                    </div>
+            </div>
+        </div>
+        </div>
+      </div>
+        <div>
+        <div class="Weekly-Featured-Items">
+          <hr>
+          <h4>Weekly Featured Items</h4>
+          <hr>
+          <div class="owl-carousel-wrapper">
+          <div class="owl-carousel owl-theme">
+            <div class="item">
+                <div class="keyfiyyetli-main-wrapper">
+                    <div class="item-img1">
+                        <div class="main-wrapper-button">
+                            <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                            <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                        </div>
+                        <div class="keyfiyyetli-main-wrapper-red-button">
+                            <button class="red-button">Sale!</button>
+                        </div>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-light">Round Neck Solid Light Blue...</div>
+                    <div class="keyfiyyetli-main-wrapper-cost"><del>$24.99</del>$12.49</div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <div class="keyfiyyetli-main-wrapper">
+                    <div class="item-img2">
+                        <div class="main-wrapper-button">
+                            <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                            <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-light">Navy Blue Dress For Women</div>
+                    <div class="keyfiyyetli-main-wrapper-cost">$19.99</div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+            <div class="item">
+                <div class="keyfiyyetli-main-wrapper">
+                    <div class="item-img3">
+                        <div class="main-wrapper-button">
+                            <button class="gray-text">Quick View</button>
+                        </div>
+                        <div class="keyfiyyetli-main-wrapper-gray-button">
+                            <button class="gray-button">Out of Stock!</button>
+                        </div>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-light">White Atletic Shoe</div>
+                    <div class="keyfiyyetli-main-wrapper-cost">$35.00</div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <div class="keyfiyyetli-main-wrapper">
+                    <div class="item-img4">
+                        <div class="main-wrapper-button">
+                            <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                            <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                        </div>
+                        <div class="keyfiyyetli-main-wrapper-red-button">
+                            <button class="red-button">Sale!</button>
+                        </div>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-light">Navy Blue T-shirt, Round Neck,...</div>
+                    <div class="keyfiyyetli-main-wrapper-cost"><del>$27.99</del>$21.00</div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+            <div class="item">
+                <div class="keyfiyyetli-main-wrapper">
+                    <div class="item-img5">
+                        <div class="main-wrapper-button">
+                            <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                            <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                        </div>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-light">Women Black T-shirt</div>
+                    <div class="keyfiyyetli-main-wrapper-cost">$13.00</div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="arrivals">
+            <div class="container">
+                <div class="arrivals-wrapper d-flex">
+                <div class="arrivals-left col-md-5 col-12">
+                    <div class="arr-left-info">
+                        <div class="arr-info-title">New Arrivals</div>
+                        <div class="arr-info-subtitle">Fresh Arrivals / Autumn 18</div>
+                        <div class="arr-info-text">
+                            Dynamically drive interdependent metrics for worldwide portals. Proactively grow client technology schemas.
+                        </div>
+                        <div class="arr-info-btn"><button>SHOP NOW</button></div>
+                    </div>
+                    <div class="arr-left-img">
+                        <div class="woman1 col-6"><img src="/images/woman1.jpg" alt=""></div>
+                        <div class="woman2 col-6"><img src="/images/woman2.jpg" alt=""></div>
+                    </div>
+                </div>
+                <div class="arrivals-right col-md-7 col-12">
+                    <img class="woman3" src="/images/woman3.jpg" alt="">
+                    <a data-fancybox data-type="iframe" data-src="https://www.youtube.com/watch?v=bpNcuh_BnsA" href="javascript:;"></a>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div class="new-arrivals-men">
+              <hr>
+              <h4>New Arrivals: Men</h4>
+              <hr>
+            </div>
+        </div>
+        <div class="main-wrapper-first">
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image1">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-red-button">
+                        <button class="red-button">Sale!</button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Light Blue Denim</div>
+                <div class="keyfiyyetli-main-wrapper-cost"><del>$24.99</del>$12.49</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image2">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Deep Blue Sport Shoe</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$19.99</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image3">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-red-button">
+                        <button class="red-button">Sale!</button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Printed Men Short</div>
+                <div class="keyfiyyetli-main-wrapper-cost"><del>$41.99</del> $35.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="main-wrapper">
+                <div class="main-wrapper4-image">
+                    <div class="slideshow-container">
+                         <div class="mySlides fade">
+                          <img src="/images/12lik41.jpg" style="width: 170px;height: 230px;">
+                        </div>
+                        <div class="mySlides fade">
+                          <img src="/images/12lik42.jpg" style="width: 170px;height: 230px;">
+                        </div>
+                        <div style="text-align:center">
+                          <span class="dot" onclick="currentSlide(1)"></span> 
+                          <span class="dot" onclick="currentSlide(2)"></span> 
+                        </div>
+                    </div>
+                </div>
+                <div class="main-wrapper-button4">
+                    <button class="black-basket4"><i class="fa-solid fa-basket-shopping"></i></button>
+                    <button class="black-expand4"><i class="fa-solid fa-expand"></i></button>
+                </div>
+                <div class="main-wrapper-light">Women Sportd Track Pant</div>
+                <div class="main-wrapper-cost">$21.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image5">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Cool Printed Dress</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$31.49</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image6">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-red-button">
+                        <button class="red-button">Sale!</button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Red Stripe Girls Top</div>
+                <div class="keyfiyyetli-main-wrapper-cost"><del>$41.99</del> $35.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <div class="main-wrapper-second">
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image7">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Dark Brown Lady Bag For...</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$49.49</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image8">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">UV Poection Sunglass</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$39.99</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image9">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-red-button">
+                        <button class="red-button">Sale!</button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Workout Sweat T-shirt</div>
+                <div class="keyfiyyetli-main-wrapper-cost"><del>$21.99</del>$15.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image10">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                    <div class="keyfiyyetli-main-wrapper-gray-button">
+                        <button class="gray-button">Out of Stock!</button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Sky Blue Printed Bag</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$61.49</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image11">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Blue Women Watch</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$23.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <div class="keyfiyyetli-main-wrapper">
+                <div class="item-image12">
+                    <div class="main-wrapper-button">
+                        <button class="black-basket"><i class="fa-solid fa-basket-shopping"></i></button>
+                        <button class="black-expand"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+                <div class="keyfiyyetli-main-wrapper-light">Blue Party Shoe</div>
+                <div class="keyfiyyetli-main-wrapper-cost">$51.00</div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+    </div>
+    <div class="shopping">
+        <div class="container">
+            <div class="shopping-wrapper">
+                <div class="shopping-wrapper-left">
+                    <div class="shopping-wrapper-left-img">
+                        <img class="shopping-wrapper-left-img1" src="/images/dress1.jpg" alt="">
+                    </div>
+                    <div class="shopping-wrapper-left-text">
+                        40% Off First Order*
+                    </div>
+                </div>
+                <div class="shopping-wrapper-right">
+                    <div class="shopping-wrapper-right-text">
+                    <div class="header-text">
+                        Sign up to get the most out of shopping.
+                    </div>
+                    <div class="first-text">
+                        <i class="fa-regular fa-circle"></i>
+                        Receive Exclusive Sale Alerts
+                    </div>
+                    <div class="second-text">
+                        <i class="fa-regular fa-circle"></i>
+                        30 Days Return Policy
+                    </div>
+                    <div class="third-text">
+                        <i class="fa-regular fa-circle"></i>
+                        Cash on Delivery Accepted
+                    </div>
+                    <div class="button">
+                        <button class="signup">Sign Up</button>
+                    </div>
+                    <div class="last-text">
+                        Don't worry, it's totally free.
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="comment-accordion">
+        <div class="comment-wrapper">
+            <div class="comment1">
+                <i class="fa-solid fa-gift"></i>
+                <div class="comment1-text">
+                    <div class="comment1-original">100% ORIGINAL</div>
+                    <div class="comment1-canvas">
+                        Canvas provides support for Native HTML5 Videos that can be added to a Full Width Background.
+                    </div>
+                </div>
+            </div>
+            <div class="comment2">
+                <i class="fa-solid fa-globe"></i>
+                <div class="comment2-text">
+                    <div class="comment2-free-shipping">FREE SHIPPING</div>
+                    <div class="comment2-display">
+                        Display your Content attractively using Parallax Sections that have unlimited customizable areas.
+                    </div>
+                </div>
+            </div>
+            <div class="comment3">
+                <i class="fa-solid fa-rotate-left"></i>
+                <div class="comment3-text">
+                    <div class="comment3-returns">30-DAYS RETURNS</div>
+                    <div class="comment3-control">
+                        You have complete easy control on each & every element that provides endless customization possibilities.
+                    </div>
+                </div>
+            </div>
+            <div class="comment4">
+                <i class="fa-solid fa-wallet"></i>
+                <div class="comment4-text">
+                    <div class="comment4-payment">PAYMENT OPTIONS</div>
+                    <div class="comment4-visa">
+                        We accept Visa, MasterCard and American Express. And We also Deliver by COD(only in US)
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="accordion-wrapper">
+            <div class="accordion-head">
+                <div class="accordion"><i class="fa-solid fa-circle-check"></i> Our Mission</div>
+                <div class="panel">
+                    <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="accordion-head">
+                <div class="accordion"><i class="fa-solid fa-circle-check"></i> What we Do?</div>
+                <div class="panel">
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="accordion-head">
+                <div class="accordion"><i class="fa-solid fa-circle-check"></i> Our Company's Values</div>
+                <div class="panel">
+                    <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur.</p>
+                </div>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="accordion-head">
+                <div class="accordion"><i class="fa-solid fa-circle-check"></i> Our Return Policy</div>
+                <div class="panel">
+                    <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo luctus. Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+                </div>
+            </div>
+        </div>  
+        </div>
+        <div>
+            <div class="brands-give-flat">
+              <hr>
+              <h4>Brands who give Flat 40% Off</h4>
+              <hr>
+            </div>
+        </div>
+        <div class="grid-container">
+            <div class="photo1 photo-img"><img class="photo" src="/images/adidas.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/armanijeans.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/converse.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/logo4.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/calvinklein.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/lee.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/levis.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/disney.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/gucci.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/mtv.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/pepejecma.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/playboy.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/puma.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/rok.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/rolex.png" alt=""></div>
+            <div class="photo1 photo-img"><img class="photo" src="/images/benetton.png" alt=""></div>
+        </div>
+        <br>
+        <div class="section">
+            <div class="section-left">
+                <div class="section-left-text">
+                    <div class="section-left-fff">Follow. Find. Favorite.</div>
+                    <div class="section-left-discover">Discover Fashion on the Go.</div>
+                    <div class="section-left-enable">Proactively enable Corporate Benefits.</div>
+                </div>
+                <div class="section-left-button">
+                    <div class="app-store-button">
+                    <button class="app-store-text">
+                        <div class="button-app-download"><i class="fa-brands fa-apple"></i><em>Download Canvas Shop</em></div>
+                        <div class="button-app-store">APP STORE</div>
+                    </button>
+                    </div>
+                    <div class="google-play-button">
+                    <button class="google-play-text">
+                        <div class="button-google-download"><i class="fa-solid fa-play"></i><em>Download Canvas Shop</em></div>
+                        <div class="button-google-play">GOOGLE PLAY</div>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <div class="section-right">
+                <img class="section-right-img" src="/images/phoneapp.png" alt="">
+            </div>
+        </div>
+        <div class="last">
+            <div class="first-last">
+                <ion-icon name="earth"></ion-icon>
+                <div class="first-last-text">
+                    <div class="first-last-shipping">Free Shipping</div>
+                    <div class="first-last-returns">& Easy Returns</div>
+                </div>
+            </div>
+            <div class="second-last">
+                <ion-icon name="book-outline"></ion-icon>
+                <div class="second-last-text">
+                    <div class="second-last-products">Geniune Products</div>
+                    <div class="second-last-guaranteed">Guaranteed</div>
+                </div>
+            </div>
+            <div class="third-last">
+                <i class="fa-solid fa-lock"></i>
+                <div class="third-last-text">
+                    <div class="third-last-bit">256-Bit</div>
+                    <div class="third-last-secured">Secured Checkouts</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1">
+                <div class="footer1-features">Features</div>
+                <div class="footer1-help">Help Center</div>
+                <div class="footer1-help">Paid with Moblie</div>
+                <div class="footer1-help">Status</div>
+                <div class="footer1-help">Changelog</div>
+                <div class="footer1-help">Contact Support</div>
+            </div>
+            <div class="footer2">
+                <div class="footer1-features">Support</div>
+                <div class="footer1-help">Home</div>
+                <div class="footer1-help">About</div>
+                <div class="footer1-help">FAQs</div>
+                <div class="footer1-help">Support</div>
+                <div class="footer1-help">Contact</div>
+            </div>
+            <div class="footer3">
+                <div class="footer1-features">Trending</div>
+                <div class="footer1-help">Shop</div>
+                <div class="footer1-help">Portfolio</div>
+                <div class="footer1-help">Blog</div>
+                <div class="footer1-help">Events</div>
+                <div class="footer1-help">Forums</div>
+            </div>
+            <div class="footer4">
+                <div class="footer1-features">Get to Know us</div>
+                <div class="footer1-help">Corporate</div>
+                <div class="footer1-help">Agency</div>
+                <div class="footer1-help">eCommerce</div>
+                <div class="footer1-help">Personal</div>
+                <div class="footer1-help">One Page</div>
+            </div>
+            <div class="footer5">
+                <div class="footer5-subscribe-now">Subscribe Now</div>
+                <div class="footer5-news">Subscribe to Our Newsletter to get Important News,</div>
+                <div class="footer5-news">Amazing Offers & Inside Scoops:</div>
+                <div class="footer5-input-button">
+                    <input class="footer5-input" type="text" name="" placeholder="Enter your Email Adress">
+                    <div class="footer5-button"><button class="footer5-button-subscribe">Subscribe Now</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-hr"> 
+            <hr>
+        </div>
+        <div class="end">
+            <div class="end-left">
+                <div class="end-left-first">Copyrights © 2020 All Rights Reserved by Canvas Inc.</div>
+                <div class="end-left-second">Terms of Use / Privacy Policy</div>
+            </div>
+            <div class="end-right">
+                <div class="end-right-text">About / Features / FAQs / Contact</div>
+            </div>
+        </div>
+       <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Icon JS -->
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <!-- Fancy Box-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+    <!-- Fancy Box-->
+    <script src="/script.js"></script>
+    <script src="/test.js"></script>
+    <!-- Owl Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="/carousel.js"></script>
+    <!-- Owl Carousel -->
+</body>
+</html>
